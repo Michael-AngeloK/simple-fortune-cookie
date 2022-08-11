@@ -18,8 +18,10 @@ jobs:
       with:
         go-version: 1.18.1
 
-    - name: Build
+    - name: Build Backend
       run: cd ~/simple-fortune-cookie/backend && go build
+
+    - name: Build Frontend
       run: cd ~/simple-fortune-cookie/frontend && go build
 
     #- name: Test
