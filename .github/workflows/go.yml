@@ -37,6 +37,7 @@ jobs:
       run: cd ./frontend && go test
   Publish:
     build-container:
+    needs: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
